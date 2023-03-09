@@ -26,7 +26,7 @@ Com base nos requisitos definidos, modelo de banco de dados para a aplicação:
 <li>Tabela "itens_venda" (id, venda_id, produto_id, quantidade, valor_unitário)</li>
 <li>Desenvolvimento da aplicação:</li>
 
-<img src="https://github.com/Guiisf/e-coffe/blob/guilherme/docs/DER.jpg">
+<img src="https://github.com/Guiisf/e-coffe/blob/guilherme/docs/DER.jpg" width="500" height="500">
 
 
 <h2>funcionalidades:</h2>
