@@ -26,6 +26,9 @@ Com base nos requisitos definidos, modelo de banco de dados para a aplicação:
 <li>Tabela "itens_venda" (id, venda_id, produto_id, quantidade, valor_unitário)</li>
 <li>Desenvolvimento da aplicação:</li>
 
+<img src="C:\Users\Guilherme Ferreira\OneDrive\Documentos\TADS\3º Semestre\PI\docs\DER.jpg" alt="Descrição da imagem">
+
+
 <h2>funcionalidades:</h2>
 
 <li>Implementar os CRUDs (Create, Read, Update, Delete) para os clientes, fornecedores e produtos</li>
@@ -41,4 +44,4 @@ Com base nos requisitos definidos, modelo de banco de dados para a aplicação:
 <li>Página de controle de estoque, com opção de adicionar/retirar produtos do estoque</li>
 <li>Página de registro de vendas, com opção de adicionar/remover produtos da venda e cálculo do valor total</li>
 
-# teste
+
