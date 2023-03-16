@@ -29,11 +29,8 @@ Com base nos requisitos definidos, modelo de banco de dados para a aplicação:
 <li>Tabela "itens_venda" (id, venda_id, produto_id, quantidade, valor_unitário)</li>
 <li>Desenvolvimento da aplicação:</li>
 
-<<<<<<< HEAD
 
-=======
 <img src="https://github.com/Guiisf/e-coffe/blob/guilherme/docs/DER.jpg" width="500" height="500">
->>>>>>> guilherme
 
 
 <h2>funcionalidades:</h2>
@@ -52,11 +49,11 @@ Com base nos requisitos definidos, modelo de banco de dados para a aplicação:
 <li>Página de registro de vendas, com opção de adicionar/remover produtos da venda e cálculo do valor total</li>
 
 <h2>O prototipo das telas</h2>
-<img src="https://github.com/Guiisf/e-coffe/blob/main/docs/Captura%20de%20tela%20de%202023-03-08%2022-28-36.png" width="300" height="300">
-<img src="https://github.com/Guiisf/e-coffe/blob/main/images/Slide1.jpg" width="300" height="300">
-<img src="https://github.com/Guiisf/e-coffe/blob/main/images/Tela%20login.png" width="300" height="300">
-<img src="https://github.com/Guiisf/e-coffe/blob/main/images/Tela%20login.png" width="300" height="300">
-<img src="https://github.com/Guiisf/e-coffe/blob/main/images/quemsomos_finalizada.jpeg" width="300" height="300">
-<img src="https://github.com/Guiisf/e-coffe/blob/Carlos/Tela%20de%20Cadastro.PNG" width="300" height="300">
+<img src="https://github.com/Guiisf/e-coffe/blob/main/docs/Captura%20de%20tela%20de%202023-03-08%2022-28-36.png" width="400" height="400">
+<img src="https://github.com/Guiisf/e-coffe/blob/main/images/Slide1.jpg" width="400" height="400">
+<img src="https://github.com/Guiisf/e-coffe/blob/main/images/Tela%20login.png" width="400" height="400">
+<img src="https://github.com/Guiisf/e-coffe/blob/main/images/Tela%20login.png" width="400" height="400">
+<img src="https://github.com/Guiisf/e-coffe/blob/main/images/quemsomos_finalizada.jpeg" width="400" height="400">
+<img src="https://github.com/Guiisf/e-coffe/blob/Carlos/Tela%20de%20Cadastro.PNG" width="400" height="400">
 
 
