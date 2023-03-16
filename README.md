@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # <h1 align="center"> funcionalidades que será implementada no PI lll</h1>
 
 
@@ -52,3 +53,6 @@ Com base nos requisitos definidos, modelo de banco de dados para a aplicação:
 
 
 >>>>>>> guilherme
+=======
+# branch heron
+>>>>>>> heron
