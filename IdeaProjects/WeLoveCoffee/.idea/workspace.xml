@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eda7e63b-5835-4177-a40a-1169c5992072" name="Changes" comment="" />
+    <list default="true" id="d84eb313-de16-4666-91d7-a0a2d172e982" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,33 +14,31 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="2O1tb9UfOffNwSefCdGDZ6zyotz" />
+  <component name="ProjectId" id="2O4mWu4VmHEcVPDa6bk6Sr6IjiZ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
+    "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="eda7e63b-5835-4177-a40a-1169c5992072" name="Changes" comment="" />
-      <created>1680739985511</created>
+      <changelist id="d84eb313-de16-4666-91d7-a0a2d172e982" name="Changes" comment="" />
+      <created>1680828264180</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1680739985511</updated>
+      <updated>1680828264180</updated>
     </task>
     <servers />
   </component>
