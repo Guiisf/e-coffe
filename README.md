@@ -49,7 +49,7 @@ Com base nos requisitos definidos, modelo de banco de dados para a aplicação:
 <li>Página de registro de vendas, com opção de adicionar/remover produtos da venda e cálculo do valor total</li>
 
 <h2>O prototipo das telas</h2>
-<img src="https://github.com/Guiisf/e-coffe/blob/main/docs/Captura%20de%20tela%20de%202023-03-08%2022-28-36.png" width="400" height="400">
+<img src="https://github.com/Guiisf/e-coffe/blob/main/images/Captura%20de%20tela%20de%202023-03-08%2022-28-36.png" width="400" height="400">
 <img src="https://github.com/Guiisf/e-coffe/blob/main/images/Slide1.jpg" width="400" height="400">
 <img src="https://github.com/Guiisf/e-coffe/blob/main/images/Tela%20login.png" width="400" height="400">
 <img src="https://github.com/Guiisf/e-coffe/blob/main/images/Tela%20login.png" width="400" height="400">
