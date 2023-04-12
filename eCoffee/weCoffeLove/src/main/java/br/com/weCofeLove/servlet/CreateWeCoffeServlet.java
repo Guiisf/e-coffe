@@ -15,17 +15,17 @@ public class CreateWeCoffeServlet extends HttpServlet {
 
         String email = request.getParameter("email");
 
-        User nomeUsuario = new User();
-        nomeUsuario.setEmail(email);
-        new WeCoffeDAO().createUsuario(nomeUsuario);
+        User user = new User();
+        user.setEmail(email);
+       // new WeCoffeDAO().createUsuario(nomeUsuario);
 
         System.out.println(email);
 
         String senha = request.getParameter("senha");
 
-        User senhaUsuario = new User();
-        senhaUsuario.setSenha(senha);
-        new WeCoffeDAO().createUsuario(senhaUsuario);
+       // User senhaUsuario = new User();
+        user.setSenha(senha);
+        new WeCoffeDAO().createUsuario(user);
 
         System.out.println(senha);
 

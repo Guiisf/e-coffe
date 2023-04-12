@@ -26,7 +26,7 @@ public class WeCoffeDAO {
             }
 
             preparancoConexao.setString(1, user.getEmail());
-            preparancoConexao.setString(1, user.getSenha());
+            preparancoConexao.setString(2, user.getSenha());
                     preparancoConexao.execute();
 
             System.out.println("Sucesso na conexao");
