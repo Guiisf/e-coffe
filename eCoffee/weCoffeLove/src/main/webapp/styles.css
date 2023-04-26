@@ -68,6 +68,8 @@ label {
 }
 
 input[type="email"],
+input[type="text"],
+input[type="date"],
 input[type="password"] {
   width: 100%;
   padding: 10px;

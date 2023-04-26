@@ -13,21 +13,37 @@ public class CreateWeCoffeServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String email = request.getParameter("email");
 
         User user = new User();
-        user.setEmail(email);
-       // new WeCoffeDAO().createUsuario(nomeUsuario);
 
+
+        String nome = request.getParameter("nome");
+        user.setNome(nome);
+        System.out.println(nome);
+
+        String sobrenome = request.getParameter("sobrenome");
+        user.setSobrenome(sobrenome);
+        System.out.println(sobrenome);
+
+        String email = request.getParameter("email");
+        user.setEmail(email);
         System.out.println(email);
 
-        String senha = request.getParameter("senha");
+        String cpf = request.getParameter("cpf");
+        user.setCpf(cpf);
+        System.out.println(cpf);
 
-       // User senhaUsuario = new User();
+        String data_Nascimento = request.getParameter("data_nascimento");
+        user.setData_nascimento(data_Nascimento);
+        System.out.println(data_Nascimento);
+
+        String senha = request.getParameter("senha");
         user.setSenha(senha);
+        System.out.println(senha);
+
+
         new WeCoffeDAO().createUsuario(user);
 
-        System.out.println(senha);
 
         request.getRequestDispatcher("index.html").forward(request, response);
 

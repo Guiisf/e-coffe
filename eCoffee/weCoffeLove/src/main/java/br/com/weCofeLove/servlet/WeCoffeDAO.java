@@ -9,7 +9,7 @@ public class WeCoffeDAO {
 
     public void createUsuario(User user) {
 
-        String sql = "INSERT INTO USUARIOS (EMAIL, SENHA) VALUES (?, ?)";
+        String sql = "INSERT INTO USUARIOS (NOME, SOBRENOME, CPF, DATA_NASCIMENTO, EMAIL, SENHA ) VALUES (?, ?, ?, ?, ?, ?)";
 
 
         try {
@@ -25,14 +25,20 @@ public class WeCoffeDAO {
                 throw new RuntimeException(ex);
             }
 
-            preparancoConexao.setString(1, user.getEmail());
-            preparancoConexao.setString(2, user.getSenha());
-                    preparancoConexao.execute();
+            preparancoConexao.setString(1, user.getNome());
+            preparancoConexao.setString(2, user.getSobrenome());
+            preparancoConexao.setString(3, user.getCpf());
+            preparancoConexao.setString(4, user.getData_nascimento());
+
+            preparancoConexao.setString(5, user.getEmail());
+            preparancoConexao.setString(6, user.getSenha());
+            preparancoConexao.execute();
 
             System.out.println("Sucesso na conexao");
 
         } catch (Exception e) {
             System.out.println("Falha na conexao");
+            System.out.println("Falha na conexão!" + e.getMessage());
         }
 
 
