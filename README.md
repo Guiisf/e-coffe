@@ -1,4 +1,3 @@
-
 # <h1 align="center"> funcionalidades que será implementada no PI lll</h1>
 
 [PROJETO INTEGRADOR III - Turma B]
@@ -57,3 +56,31 @@ Com base nos requisitos definidos, modelo de banco de dados para a aplicação:
 <img src="https://github.com/Guiisf/e-coffe/blob/Carlos/Tela%20de%20Cadastro.PNG" width="400" height="400">
 
 
+<h2>Como efetuar o teste:</h2>
+<h3>Criando tabela: </h3>
+Primeiro, criar a tabela no h2 através do link: http://localhost:8080/weCoffeLove/console.
+
+Login: "sa"
+senha: "sa"
+
+Após o login, criar a tabela através da query abaixo:
+
+CREATE TABLE USUARIOS (
+    id INT AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL,
+    sobrenome VARCHAR(50) NOT NULL,
+    cpf CHAR(11) NOT NULL,
+    data_nascimento DATE NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    senha VARCHAR(20) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+<h3>Executando o projeto: </h3>
+Após a criação da tabela, executar o tomcat7:run na aba do maven, no intellij.
+
+Clicar no link http://localhost:8080 que vai aparecer no console.
+
+Preencher os campos da tela.
+
+Após os campos preenchidos, clicar no botão "Cadastrar", nesta hora o cadastro será enviado ao banco e logo em seguida, todos os registros do banco vão aparecer.sws
