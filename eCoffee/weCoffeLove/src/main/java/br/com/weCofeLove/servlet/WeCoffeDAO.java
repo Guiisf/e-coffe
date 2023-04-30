@@ -117,7 +117,44 @@ public class WeCoffeDAO {
 
     }
 
+    public void updateUser(User user) {
+
+        String SQL = "UPDATE USUARIOS SET NOME = ?  WHERE ID = ?";
+
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("Sucesso na conexão");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, user.getId());
+            preparedStatement.setString(2, user.getNome());
+            preparedStatement.setString(3, user.getSobrenome());
+            preparedStatement.setString(4, user.getCpf());
+            preparedStatement.setString(5, user.getData_nascimento());
+            preparedStatement.setString(6, user.getEmail());
+            preparedStatement.setString(7, user.getSenha());
+
+            preparedStatement.execute();
+
+            System.out.println("Sucusso na atualização do usuario");
+
+            connection.close();
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+            System.out.println("Error: " + e.getMessage());
+
+        }
+
+    }
+
 }
+
+
 
 
 

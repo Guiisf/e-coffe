@@ -32,14 +32,18 @@ public class CreateWeCoffeServlet extends HttpServlet {
 
         String senha = request.getParameter("senha");
 
+        WeCoffeDAO userDao = new WeCoffeDAO();
 
         User user = new User(id, nome, sobrenome, email, senha, cpf, data_Nascimento);
 
 
         new WeCoffeDAO().CreateUser(user);
 
-
-        //request.getRequestDispatcher("index.html").forward(request, response);
+        if (nome.isBlank()) {
+            userDao.CreateUser(user);
+        } else {
+            userDao.updateUser(user);
+        }
 
         response.sendRedirect("/weCoffeLove/find-all-users");
 

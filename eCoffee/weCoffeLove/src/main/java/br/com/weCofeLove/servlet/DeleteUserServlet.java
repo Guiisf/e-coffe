@@ -12,9 +12,9 @@ public class DeleteUserServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
-        String carId = req.getParameter("id");
+        String userId = req.getParameter("id");
 
-        new WeCoffeDAO().deleteUserById(carId);
+        new WeCoffeDAO().deleteUserById(userId);
 
         resp.sendRedirect("/weCoffeLove/find-all-users");
 
