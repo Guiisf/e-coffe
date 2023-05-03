@@ -30,9 +30,9 @@
     <form action="create-weCoffee" method="post">
 
 
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" ><br><br>
- <input type="hidden" id="id" name="id" value="${param.id}">
+         <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" value="${param.name}"><br><br>
+               <input type="hidden" id="id" name="id" value="${param.id} ">
 
 
         <label for="sobrenome">Sobrenome:</label>
