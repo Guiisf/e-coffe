@@ -1,5 +1,7 @@
 # <h1 align="center"> funcionalidades que será implementada no PI lll</h1>
 
+[PROJETO INTEGRADOR III - Turma B]
+
 
 <p>Spring</p>
 <p>MySQL</p>
@@ -26,6 +28,10 @@ Com base nos requisitos definidos, modelo de banco de dados para a aplicação:
 <li>Tabela "itens_venda" (id, venda_id, produto_id, quantidade, valor_unitário)</li>
 <li>Desenvolvimento da aplicação:</li>
 
+
+<img src="https://github.com/Guiisf/e-coffe/blob/guilherme/docs/DER.jpg" width="500" height="500">
+
+
 <h2>funcionalidades:</h2>
 
 <li>Implementar os CRUDs (Create, Read, Update, Delete) para os clientes, fornecedores e produtos</li>
@@ -41,4 +47,40 @@ Com base nos requisitos definidos, modelo de banco de dados para a aplicação:
 <li>Página de controle de estoque, com opção de adicionar/retirar produtos do estoque</li>
 <li>Página de registro de vendas, com opção de adicionar/remover produtos da venda e cálculo do valor total</li>
 
-# teste
+<h2>O prototipo das telas</h2>
+<img src="https://github.com/Guiisf/e-coffe/blob/main/images/Captura%20de%20tela%20de%202023-03-08%2022-28-36.png" width="400" height="400">
+<img src="https://github.com/Guiisf/e-coffe/blob/main/images/Slide1.jpg" width="400" height="400">
+<img src="https://github.com/Guiisf/e-coffe/blob/main/images/Tela%20login.png" width="400" height="400">
+<img src="https://github.com/Guiisf/e-coffe/blob/main/images/Tela%20login.png" width="400" height="400">
+<img src="https://github.com/Guiisf/e-coffe/blob/main/images/quemsomos_finalizada.jpeg" width="400" height="400">
+<img src="https://github.com/Guiisf/e-coffe/blob/Carlos/Tela%20de%20Cadastro.PNG" width="400" height="400">
+
+
+<h2>Como efetuar o teste:</h2>
+<h3>Criando tabela: </h3>
+Primeiro, criar a tabela no h2 através do link: http://localhost:8080/weCoffeLove/console.
+
+Login: "sa"
+senha: "sa"
+
+Após o login, criar a tabela através da query abaixo:
+
+CREATE TABLE USUARIOS (
+    id INT AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL,
+    sobrenome VARCHAR(50) NOT NULL,
+    cpf CHAR(11) NOT NULL,
+    data_nascimento DATE NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    senha VARCHAR(20) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+<h3>Executando o projeto: </h3>
+Após a criação da tabela, executar o tomcat7:run na aba do maven, no intellij.
+
+Clicar no link http://localhost:8080 que vai aparecer no console.
+
+Preencher os campos da tela.
+
+Após os campos preenchidos, clicar no botão "Cadastrar", nesta hora o cadastro será enviado ao banco e logo em seguida, todos os registros do banco vão aparecer.sws
