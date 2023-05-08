@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+#area-logo {
+	padding: 10px;
+
+}
+
+#area-cabecalho {
+	background-color: #000000;
+	padding: 15px;
+	text-align: center;
+}
+
+#area-menu {
+	padding: 1px;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: #000000;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+#area-cabecalho a:link, #area-cabecalho a:visited {
+	color: #FFF;
+	padding: 8px 12px;
+
+}
+
+#area-cabecalho a:hover {
+	color: #000000;
+	background: #FFF;
+	text-decoration: none;
+
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 50px;
+}
+
+form {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+#quem-somos {
+  margin-top: 30px;
+  overflow: hidden;
+}
+#quem-somos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+
+#quem-somos img {
+  float: right;
+  margin-left: 20px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
