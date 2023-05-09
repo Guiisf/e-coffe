@@ -1,0 +1,58 @@
+/* Centraliza a div principal */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Define um tamanho fixo para a div de cada produto */
+.produto {
+    width: 200px;
+    margin: 20px;
+}
+.produto .preco {
+    font-weight: bold;
+}
+
+
+/* Centraliza a imagem dentro da div do produto */
+.produto img {
+max-width: 100%;
+  height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estiliza o título do produto */
+.produto h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Estiliza a descrição do produto */
+.produto p {
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+/* Cria uma borda ao redor da imagem do produto */
+.produto img {
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
