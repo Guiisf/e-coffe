@@ -36,24 +36,24 @@
 
 
         <label for="sobrenome">Sobrenome:</label>
-        <input type="text" id="sobrenome" name="sobrenome"><br><br>
+        <input type="text" id="sobrenome" name="sobrenome" value="${param.sobrenome}"><br><br>
 
 
         <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email"><br><br>
+        <input type="email" id="email" name="email" value="${param.email}"><br><br>
 
 
         <label for="cpf">CPF:</label>
-        <input type="text" id="cpf" name="cpf"><br><br>
+        <input type="text" id="cpf" name="cpf" value="${param.cpf}"><br><br>
 
         <label for="data_nascimento">Data de Nascimento:</label>
-        <input type="date" id="data_nascimento" name="data_nascimento"><br><br>
+        <input type="date" id="data_nascimento" name="data_nascimento" value="${param.data_nascimento}"><br><br>
 
         <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha"><br><br>
+        <input type="password" id="senha" name="senha" value="${param.senha}"><br><br>
 
         <label for="confirma_senha">Confirme sua senha:</label>
-        <input type="password" id="confirma_senha" name="confirma_senha"><br><br>
+        <input type="password" id="confirma_senha" name="confirma_senha" value="${param.confirma_senha}"><br><br>
 
 
         <button type="submit">Cadastrar</button>

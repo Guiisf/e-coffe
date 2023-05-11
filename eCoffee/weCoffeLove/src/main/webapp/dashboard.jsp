@@ -89,7 +89,7 @@
                         <input type="hidden" id="id" name="id" value="${user.id}">
                         <button type="submit">Excluir</button>
                         <span> | </span>
-                       <a href="registro.jsp?id=${user.id}&name=${user.nome}" class="botao">Atualizar</a>
+                       <a href="registro.jsp?id=${user.id}&name=${user.nome}&sobrenome=${user.sobrenome}&email=${user.email}&cpf=${user.cpf}&data_nascimento=${user.data_nascimento}&senha=${user.senha}" class="botao">Atualizar</a>
 
                     </form>
                 </td>
