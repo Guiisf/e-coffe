@@ -56,8 +56,7 @@
         <input type="password" id="confirma_senha" name="confirma_senha" value="${param.confirma_senha}"><br><br>
 
 
-        <button type="submit">Cadastrar</button>
-
+        <button type="submit">Cadastrar</button
     </form>
 
     <footer>
