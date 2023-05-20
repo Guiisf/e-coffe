@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+#area-logo {
+	padding: 10px;
+
+}
+
+#area-cabecalho {
+	background-color: #000000;
+	padding: 15px;
+	text-align: center;
+}
+
+#area-menu {
+	padding: 1px;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: #000000;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+#area-cabecalho a:link, #area-cabecalho a:visited {
+	color: #FFF;
+	padding: 8px 12px;
+
+}
+
+#area-cabecalho a:hover {
+	color: #000000;
+	background: #FFF;
+	text-decoration: none;
+
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+  margin-top: 50px;
+  justify-content: right;
+  margin: 20px 0;
+  margin-bottom: auto;
+}
+
+
+
+form {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+#quem-somos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  padding: 50px;
+  width: 800px;
+  height: 500px;
+  overflow: auto;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #000000;
+  line-height: 1.5;
+  padding: 10px;
+  margin-bottom: 10px
+  
+}
+
+#fotologo{
+  text-align: center;
+}
+
+p1 {
+  margin-left: 125px;
+  margin-bottom: 10px;
+  text-align: justify;
+  font: 1em script; 
+  top: 50px;
+  color: #434242;
+
+}
+
+h3{
+  margin-right: 0;
+  margin-left: 125px;
+  padding: 5px;
+  font: 1.1em script;
+  font-weight: bold;
+  top: 50px;
+}
+
+#foto1 {
+  display: flex;
+  float: right;
+  margin-right: 200px;
+  margin-left: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  position: relative;
+  top: 50px;
+  font-size: 40px;
+  background-color: rgb(95, 138, 170);
+  
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
