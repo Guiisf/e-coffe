@@ -80,9 +80,6 @@ footer {
 }
 
 
-###################################################################################
-
-
 
 /*Limpar formatações padrão*/
 
@@ -216,4 +213,29 @@ h3 {
 	margin-bottom: 10px;
 	display: block;
 }
->>>>>>> origin/Davi
+
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+        var username = sessionStorage.getItem('username');
+        if (username) {
+            var usernameSpan = document.createElement('span');
+            usernameSpan.textContent = username;
+            usernameSpan.className = 'username';
+            var footer = document.querySelector('footer');
+            footer.appendChild(usernameSpan);
+        }
+    });
+</script>
+
+.success-message {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.username {
+  color: #ffffff; /* Define a cor do texto como branco */
+  float: right; /* Alinha o elemento à direita */
+}

@@ -1,5 +1,7 @@
 package br.com.weCofeLove.servlet;
 
+import br.com.weCofeLove.dao.WeCoffeDAO;
+
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;

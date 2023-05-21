@@ -48,9 +48,14 @@ a:hover {
 
 h1 {
   text-align: center;
-  color: #333;
+  color: #000000;
   margin-top: 50px;
+  justify-content: right;
+  margin: 20px 0;
+  margin-bottom: auto;
 }
+
+
 
 form {
   width: 400px;
@@ -68,21 +73,59 @@ label {
 }
 
 #quem-somos {
-  margin-top: 30px;
-  overflow: hidden;
-}
-#quem-somos {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  text-align: justify;
   padding: 50px;
+  width: 800px;
+  height: 500px;
+  overflow: auto;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #000000;
+  line-height: 1.5;
+  padding: 10px;
+  margin-bottom: 10px
+
 }
 
-#quem-somos img {
+#fotologo{
+  text-align: center;
+}
+
+p1 {
+  margin-left: 125px;
+  margin-bottom: 10px;
+  text-align: justify;
+  font: 1em script;
+  top: 50px;
+  color: #434242;
+
+}
+
+h3{
+  margin-right: 0;
+  margin-left: 125px;
+  padding: 5px;
+  font: 1.1em script;
+  font-weight: bold;
+  top: 50px;
+}
+
+#foto1 {
+  display: flex;
   float: right;
-  margin-left: 20px;
+  margin-right: 200px;
+  margin-left: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  position: relative;
+  top: 50px;
+  font-size: 40px;
+  background-color: rgb(95, 138, 170);
+
 }
 
 footer {

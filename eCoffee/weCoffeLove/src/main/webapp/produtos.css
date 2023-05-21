@@ -6,6 +6,18 @@ main {
     align-items: center;
     text-align: center;
 }
+#area-cabecalho {
+	background-color: #000000;
+	padding: 15px;
+	text-align: center;
+
+      color: #ffffff; /* Define a cor do texto como branco */
+      float: right; /* Alinha o elemento à direita */
+    }
+    .username {
+      color: #ffffff; /* Define a cor do texto como branco */
+      float: right; /* Alinha o elemento à direita */
+    }
 
 /* Define um tamanho fixo para a div de cada produto */
 .produto {

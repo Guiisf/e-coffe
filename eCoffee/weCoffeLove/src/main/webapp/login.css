@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.login-section {
+    background-color: white;
+    padding: 20px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+}

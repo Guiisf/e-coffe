@@ -1,4 +1,9 @@
-package br.com.weCofeLove.servlet;
+package br.com.weCofeLove.dao;
+
+
+import br.com.weCofeLove.model.Adm;
+import br.com.weCofeLove.model.User;
+import br.com.weCofeLove.servlet.ConnectionPoolConfig;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -14,8 +19,7 @@ public class WeCoffeDAO {
 
         try {
 
-            Connection conexao =
-                    DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+            Connection conexao = ConnectionPoolConfig.getConnection();
 
             PreparedStatement preparancoConexao =
                     null;
@@ -48,11 +52,9 @@ public class WeCoffeDAO {
 
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+            Connection conexao = ConnectionPoolConfig.getConnection();
 
-            System.out.println("success in database connection");
-
-            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            PreparedStatement preparedStatement = conexao.prepareStatement(SQL);
 
             ResultSet resultSet = preparedStatement.executeQuery();
 
@@ -76,7 +78,7 @@ public class WeCoffeDAO {
 
             System.out.println("Sucesso no comando Selec * Usuarios");
 
-            connection.close();
+            conexao.close();
 
             return usuarios;
 
@@ -97,17 +99,15 @@ public class WeCoffeDAO {
 
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+            Connection conexao = ConnectionPoolConfig.getConnection();
 
-            System.out.println("success in database connection");
-
-            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            PreparedStatement preparedStatement = conexao.prepareStatement(SQL);
             preparedStatement.setString(1, userId);
             preparedStatement.execute();
 
             System.out.println("success on delete user with id: " + userId);
 
-            connection.close();
+            conexao.close();
 
         } catch (Exception e) {
 
@@ -123,11 +123,9 @@ public class WeCoffeDAO {
 
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+            Connection conexao = ConnectionPoolConfig.getConnection();
 
-            System.out.println("Sucesso na conexão");
-
-            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            PreparedStatement preparedStatement = conexao.prepareStatement(SQL);
 
             preparedStatement.setString(1, user.getId());
             preparedStatement.setString(2, user.getNome());
@@ -141,12 +139,54 @@ public class WeCoffeDAO {
 
             System.out.println("Sucusso na atualização do usuario");
 
-            connection.close();
+            conexao.close();
 
         } catch (Exception e) {
 
             System.out.println("fail in database connection");
             System.out.println("Error: " + e.getMessage());
+
+        }
+
+    }
+
+
+    public boolean verifyCredentials(User user) {
+
+        String SQL = "SELECT * FROM USUARIOS WHERE NOME = ?";
+
+        try {
+
+            Connection conexao = ConnectionPoolConfig.getConnection();
+
+            PreparedStatement preparedStatement = conexao.prepareStatement(SQL);
+
+            preparedStatement.setString(1, user.getNome());
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            System.out.println("Sucesso em encontrar o nome");
+
+            while (resultSet.next()) {
+
+                String password = resultSet.getString("SENHA");
+
+                if (password.equals(user.getSenha())) {
+
+                    return true;
+
+                }
+
+            }
+
+            conexao.close();
+
+            return false;
+
+        } catch (Exception e) {
+
+            System.out.println("Error: " + e.getMessage());
+
+            return false;
 
         }
 

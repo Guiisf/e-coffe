@@ -1,4 +1,6 @@
-package br.com.weCofeLove.servlet;
+package br.com.weCofeLove.model;
+
+import org.h2.api.UserToRolesMapper;
 
 public class User {
 
@@ -12,6 +14,14 @@ public class User {
 
     public User() {
     }
+
+    public User(String nome, String senha){
+        this.nome = nome;
+        this.senha = senha;
+
+
+    }
+
 
     public User(String id, String nome, String sobrenome, String email, String senha, String cpf, String data_nascimento) {
         this.id = id;

@@ -13,6 +13,17 @@ body {
 	background-color: #000000;
 	padding: 15px;
 	text-align: center;
+
+      color: #ffffff; /* Define a cor do texto como branco */
+      float: right; /* Alinha o elemento à direita */
+    }
+    .username {
+      color: #ffffff; /* Define a cor do texto como branco */
+      float: right; /* Alinha o elemento à direita */
+    }
+
+
+
 }
 
 #area-menu {
@@ -98,3 +109,22 @@ button[type="submit"] {
 }
 
 /* estilo do container do texto e da imagem */
+
+.username {
+    font-weight: bold;
+    color: red;
+    margin-left: 10px;
+}
+.success-message {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.username-right {
+  float: right;
+}
+.align-right {
+  float: right;
+}

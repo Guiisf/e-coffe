@@ -1,25 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Home - WeLoveCoffee</title>
-    <link rel="stylesheet" href="../CSS/styles.css">
-    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
-    <%@ include file="header.jsp" %>
+
 
     <div id="area-cabecalho">
+     <%@ include file="header.jsp" %>
         <div id="area-logo">
-            <img src="../img/logo.png" alt="Logo WeLoveCoffee">
+            <img src="img/logo.png" alt="Logo WeLoveCoffee">
         </div>
         <div id="area-menu">
-            <a href="../JSP/index.jsp">Home</a>
-            <a href="../JSP/produtos.jsp">Produtos</a>
+            <a href="index.html">Home</a>
+            <a href="produtos.jsp">Produtos</a>
             <a href="quemSomos.html">Quem Somos</a>
             <a href="registro.html">Registrar</a>
         </div>
@@ -36,7 +38,7 @@
 
             <h2>Nossa nova loja de café na Rua Augusta</h2>
 
-            <img width="620px" src="../img/Loja1.png">
+            <img width="620px" src="img/Loja1.png">
             <p>
                 Com um ambiente moderno e aconchegante, nossa loja oferece uma experiência única para os amantes de
                 café, com uma seleção de grãos de alta qualidade e bebidas especiais preparadas por baristas
@@ -55,7 +57,7 @@
 
             <h2>Um café realmente especial</h2>
 
-            <img width="620px" src="../img/Producao1.png">
+            <img width="620px" src="img/Producao1.png">
             <p>
                 Estamos diretamente envolvidos em todas as etapas da cadeia do café: do cultivo até o serviço da xícara.
                 <br>Afim de controlarmos a qualidade do produto final oferecido, nossa equipe está sempre atenta às
@@ -63,14 +65,12 @@
             </p>
 
         </div>
-        <!-- // fechamento postagem-->
 
-        <!--abertura postagem-->
         <div class="postagem">
 
             <h2>Kits de Café</h2>
 
-            <img width="620px" src="../img/KitCafe.png">
+            <img width="620px" src="img/KitCafe.png">
             <p>
                 Adquirir um kit de café não apenas é uma maneira de desfrutar de uma experiência única em casa, mas
                 também é uma excelente opção de presente para amigos e familiares que adoram café.
@@ -79,7 +79,6 @@
             </p>
 
         </div>
-        <!-- // fechamento postagem-->
 
     </div>
 
@@ -119,17 +118,17 @@
 
 </div>
 
-<!-- ... códigos HTML anteriores ... -->
+
 
 <script>
-    // Obtendo a mensagem de sucesso da sessão
+
     var successMessage = '<%= request.getSession().getAttribute("successMessage") %>';
 
-    // Limpando a mensagem de sucesso da sessão
+
     <% request.getSession().removeAttribute("successMessage"); %>
 
 
-    // Exibindo a mensagem de sucesso
+
     if (successMessage) {
         var successDiv = document.createElement('div');
         successDiv.classList.add('success-message');
