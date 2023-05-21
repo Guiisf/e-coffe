@@ -1,63 +1,61 @@
 /* Centraliza a div principal */
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 #area-cabecalho {
-	background-color: #000000;
-	padding: 15px;
-	text-align: center;
 
-      color: #ffffff; /* Define a cor do texto como branco */
-      float: right; /* Alinha o elemento à direita */
-    }
-    .username {
-      color: #ffffff; /* Define a cor do texto como branco */
-      float: right; /* Alinha o elemento à direita */
-    }
+	padding: 10px;
+	text-align: center;
+}
+.username {
+  color: #ffffff;
+  float: right;
+}
+
+
+
 
 /* Define um tamanho fixo para a div de cada produto */
 .produto {
-    width: 200px;
-    margin: 20px;
-}
-.produto .preco {
-    font-weight: bold;
+  width: 200px;
+  margin: 20px;
 }
 
+.produto .preco {
+  font-weight: bold;
+}
 
 /* Centraliza a imagem dentro da div do produto */
 .produto img {
-max-width: 100%;
+  max-width: 100%;
   height: auto;
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Estiliza o título do produto */
 .produto h2 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 /* Estiliza a descrição do produto */
 .produto p {
-    font-size: 0.8rem;
-    margin-top: 5px;
+  font-size: 0.8rem;
+  margin-top: 5px;
 }
 
 /* Cria uma borda ao redor da imagem do produto */
 .produto img {
-
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-
 
 footer {
   position: relative;
@@ -68,7 +66,6 @@ footer {
   text-align: center;
   padding: 10px;
 }
-
 
 #area-botao {
   float: right;

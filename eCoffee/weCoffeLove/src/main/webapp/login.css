@@ -26,3 +26,14 @@ body {
     margin-top: 5px;
     font-size: 14px;
 }
+
+/* Estilização dos botões */
+.btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+}

@@ -16,15 +16,16 @@
 
     <div id="area-cabecalho">
      <%@ include file="header.jsp" %>
+
         <div id="area-logo">
             <img src="img/logo.png" alt="Logo WeLoveCoffee">
         </div>
-        <div id="area-menu">
-            <a href="index.html">Home</a>
-            <a href="produtos.jsp">Produtos</a>
-            <a href="quemSomos.html">Quem Somos</a>
-            <a href="registro.html">Registrar</a>
-        </div>
+       <div id="area-menu">
+                   <a href="index.jsp">Home</a>
+                   <a href="produtos.jsp">Produtos</a>
+                   <a href="quemSomos.jsp">Quem Somos</a>
+                   <a href="registro.jsp">Registrar</a>
+               </div>
     </div>
 </header>
 
@@ -118,26 +119,6 @@
 
 </div>
 
-
-
-<script>
-
-    var successMessage = '<%= request.getSession().getAttribute("successMessage") %>';
-
-
-    <% request.getSession().removeAttribute("successMessage"); %>
-
-
-
-    if (successMessage) {
-        var successDiv = document.createElement('div');
-        successDiv.classList.add('success-message');
-        successDiv.textContent = successMessage;
-
-        var container = document.getElementById('area-principal');
-        container.insertBefore(successDiv, container.firstChild);
-    }
-</script>
 
 
 </body>

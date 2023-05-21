@@ -36,6 +36,6 @@ public class CreateWeCoffeServlet extends HttpServlet {
         request.getSession().setAttribute("successMessage", "Você se registrou com sucesso: " + nome);
 
         // Redirecione o usuário para a página index.jsp
-        response.sendRedirect("/weCoffeLove/index.jsp");
+        response.sendRedirect("/weCoffeLove/login.jsp");
     }
 }

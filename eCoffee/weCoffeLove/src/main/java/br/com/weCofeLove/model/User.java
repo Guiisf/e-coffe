@@ -1,7 +1,5 @@
 package br.com.weCofeLove.model;
 
-import org.h2.api.UserToRolesMapper;
-
 public class User {
 
     private String id;
@@ -15,7 +13,7 @@ public class User {
     public User() {
     }
 
-    public User(String nome, String senha){
+    public User(String nome, String senha) {
         this.nome = nome;
         this.senha = senha;
 

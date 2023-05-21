@@ -23,7 +23,6 @@ public class LoginServlet extends HttpServlet {
         String password = req.getParameter("password");
 
 
-
         Adm admUser = new Adm(username, password);
         boolean isValidAdm = new AdmDao().verifyCredentials(admUser);
 

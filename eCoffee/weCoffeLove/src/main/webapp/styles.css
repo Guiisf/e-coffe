@@ -5,56 +5,44 @@ body {
 }
 
 #area-logo {
-	padding: 10px;
-
+  padding: 10px;
 }
-
 #area-cabecalho {
-	background-color: #000000;
-	padding: 15px;
+
+	padding: 10px;
 	text-align: center;
-
-      color: #ffffff; /* Define a cor do texto como branco */
-      float: right; /* Alinha o elemento à direita */
-    }
-    .username {
-      color: #ffffff; /* Define a cor do texto como branco */
-      float: right; /* Alinha o elemento à direita */
-    }
-
-
-
+}
+.username {
+  color: #ffffff;
+  float: right;
 }
 
 #area-menu {
-	padding: 1px;
-
+  padding: 1px;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a:link, a:visited {
-	color: #000000;
+  color: #000000;
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
-
-#area-cabecalho a:link, #area-cabecalho a:visited {
-	color: #FFF;
-	padding: 8px 12px;
-
+#area-cabecalho a:link,
+#area-cabecalho a:visited {
+  color: #fff;
+  padding: 8px 12px;
 }
 
 #area-cabecalho a:hover {
-	color: #000000;
-	background: #FFF;
-	text-decoration: none;
-
+  color: #000000;
+  background: #fff;
+  text-decoration: none;
 }
 
 h1 {
@@ -102,29 +90,39 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-/* estilo da imagem */
 .float-right {
   float: right;
   margin-left: 20px; /* adicionamos uma margem à esquerda para separar a imagem do texto */
 }
 
-/* estilo do container do texto e da imagem */
-
 .username {
-    font-weight: bold;
-    color: red;
-    margin-left: 10px;
+  font-weight: bold;
+  color: red;
+  margin-left: 10px;
 }
+
 .success-message {
-    background-color: green;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
 }
+
 .username-right {
   float: right;
 }
+
 .align-right {
   float: right;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
 }

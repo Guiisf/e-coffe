@@ -1,5 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Quem Somos - WeLoveCoffee</title>
@@ -8,15 +9,16 @@
 <body>
 <header>
     <div id="area-cabecalho">
+    <%@ include file="header.jsp" %>
         <div id="area-logo">
             <img alt="Logo WeLoveCoffee" id="foto-logo" src="img/logo.png">
         </div>
         <div id="area-menu">
-            <a href="index.jsp">Home</a>
-            <a href="produtos.jsp">Produtos</a>
-            <a href="quemSomos.jsp">Quem Somos</a>
-            <a href="registro.jsp">Registrar</a>
-        </div>
+                    <a href="index.jsp">Home</a>
+                    <a href="produtos.jsp">Produtos</a>
+                    <a href="quemSomos.jsp">Quem Somos</a>
+                    <a href="registro.jsp">Registrar</a>
+                </div>
     </div>
 </header>
 <main>
