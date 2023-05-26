@@ -1,23 +1,29 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
-<title>Home - WeLoveCoffee</title>
-    <link href="styles.css" rel="stylesheet">
-    <link href="produtos.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - WeLoveCoffee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+     <link rel="stylesheet" href="produtos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
     <div id="area-cabecalho">
-     <%@ include file="header.jsp" %>
         <div id="area-logo">
             <img alt="Logo WeLoveCoffee" src="img/logo.png">
         </div>
         <div id="area-menu">
-                            <a href="index.jsp">Home</a>
-                            <a href="produtos.jsp">Produtos</a>
-                            <a href="quemSomos.jsp">Quem Somos</a>
-                            <a href="registro.jsp">Registrar</a>
-                        </div>
+            <a href="index.jsp">Home</a>
+            <a href="produtos.jsp">Produtos</a>
+            <a href="quemSomos.jsp">Quem Somos</a>
+            <a href="registro.jsp">Registrar</a>
+        </div>
+    </div>
 </header>
 <main>
     <h1>Bem-vindo à WeLoveCoffee!</h1>
