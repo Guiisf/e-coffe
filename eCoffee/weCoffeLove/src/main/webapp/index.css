@@ -1,4 +1,4 @@
-/* Centraliza a div principal */
+
 main {
     display: flex;
     flex-direction: column;
@@ -12,7 +12,6 @@ main {
     font-size: 40px;
 }
 
-/* Define um tamanho fixo para a div de cada produto */
 .produto {
     width: 200px;
     margin: 20px;
@@ -22,7 +21,6 @@ main {
 }
 
 
-/* Centraliza a imagem dentro da div do produto */
 .produto img {
 max-width: 100%;
   height: auto;
@@ -30,20 +28,17 @@ max-width: 100%;
     margin: 0 auto;
 }
 
-/* Estiliza o título do produto */
 .produto h2 {
     font-size: 1.2rem;
     font-weight: bold;
     margin-top: 10px;
 }
 
-/* Estiliza a descrição do produto */
 .produto p {
     font-size: 0.8rem;
     margin-top: 5px;
 }
 
-/* Cria uma borda ao redor da imagem do produto */
 .produto img {
 
     border: 1px solid #ddd;
@@ -62,12 +57,22 @@ footer {
   padding: 10px;
 }
 
+#area-botao {
+  float: right;
+}
 
-###################################################################################
-
-
-
-/*Limpar formatações padrão*/
+#area-botao button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
 * {
 	margin: 0px;
@@ -80,15 +85,16 @@ body {
 	background: #e6e6e6;
 }
 
-/*
-**** Layout ****
-*/
-
 #area-cabecalho {
 	
 	padding: 10px;
 	text-align: center;
 }
+.username {
+  color: #ffffff;
+  float: right;
+}
+
 
 #area-logo {
 	padding: 10px;
@@ -139,9 +145,6 @@ body {
 	background: #e6e6e6;
 }
 
-/*
-**** Formatação do Menu ****
-*/
 
 a {
 	text-decoration: none;
@@ -169,9 +172,6 @@ a:hover {
 }
 
 
-/*
-**** Formatações Gerais ****
-*/
 
 h1 {
 	color: #4e4e4e;
@@ -198,4 +198,30 @@ h3 {
 	padding-bottom: 10px;
 	margin-bottom: 10px;
 	display: block;
+}
+
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+        var username = sessionStorage.getItem('username');
+        if (username) {
+            var usernameSpan = document.createElement('span');
+            usernameSpan.textContent = username;
+            usernameSpan.className = 'username';
+            var footer = document.querySelector('footer');
+            footer.appendChild(usernameSpan);
+        }
+    });
+</script>
+
+.success-message {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.username {
+  color: #ffffff;
+  float: right;
 }

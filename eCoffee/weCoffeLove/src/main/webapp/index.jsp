@@ -1,28 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Home - WeLoveCoffee</title>
-    <link href="styles.css" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
-    <%@ include file="header.jsp" %>
+
 
     <div id="area-cabecalho">
+     <%@ include file="header.jsp" %>
+
         <div id="area-logo">
-            <img alt="Logo WeLoveCoffee" src="img/logo.png">
+            <img src="img/logo.png" alt="Logo WeLoveCoffee">
         </div>
-        <div id="area-menu">
-            <a href="index.jsp">Home</a>
-            <a href="produtos.jsp">Produtos</a>
-            <a href="quemSomos.jsp">Quem Somos</a>
-            <a href="registro.jsp">Registrar</a>
-        </div>
+       <div id="area-menu">
+                   <a href="index.jsp">Home</a>
+                   <a href="produtos.jsp">Produtos</a>
+                   <a href="quemSomos.jsp">Quem Somos</a>
+                   <a href="registro.jsp">Registrar</a>
+               </div>
     </div>
 </header>
 
@@ -36,7 +39,7 @@
 
             <h2>Nossa nova loja de café na Rua Augusta</h2>
 
-            <img src="img/Loja1.png" width="620px">
+            <img width="620px" src="img/Loja1.png">
             <p>
                 Com um ambiente moderno e aconchegante, nossa loja oferece uma experiência única para os amantes de
                 café, com uma seleção de grãos de alta qualidade e bebidas especiais preparadas por baristas
@@ -55,7 +58,7 @@
 
             <h2>Um café realmente especial</h2>
 
-            <img src="img/Producao1.png" width="620px">
+            <img width="620px" src="img/Producao1.png">
             <p>
                 Estamos diretamente envolvidos em todas as etapas da cadeia do café: do cultivo até o serviço da xícara.
                 <br>Afim de controlarmos a qualidade do produto final oferecido, nossa equipe está sempre atenta às
@@ -68,7 +71,7 @@
 
             <h2>Kits de Café</h2>
 
-            <img src="img/KitCafe.png" width="620px">
+            <img width="620px" src="img/KitCafe.png">
             <p>
                 Adquirir um kit de café não apenas é uma maneira de desfrutar de uma experiência única em casa, mas
                 também é uma excelente opção de presente para amigos e familiares que adoram café.
@@ -77,7 +80,6 @@
             </p>
 
         </div>
-
 
     </div>
 
@@ -118,13 +120,13 @@
 </div>
 
 
-<footer>
-    <p>&copy; 2023 WeLoveCoffee. Todos os direitos reservados.</p>
-
-</footer>
 
 </body>
 </html>
 
 
-
+<footer>
+    <p>&copy; 2023 WeLoveCoffee. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

@@ -1,6 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Tela de Login</title>
@@ -10,6 +10,7 @@
 <body>
 
 <div id="area-cabecalho">
+<%@ include file="header.jsp" %>
 
     <div id="area-logo">
 
@@ -18,11 +19,11 @@
     </div>
 
     <div id="area-menu">
-        <a href="home.html">Home</a>
-        <a href="index.html">Produtos</a>
-        <a href="index.html">Quem Somos</a>
-        <a href="index.html">Registrar</a>
-    </div>
+            <a href="index.jsp">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="quemSomos.html">Quem Somos</a>
+            <a href="registro.html">Registrar</a>
+        </div>
 
 
     <h1>Registro de Usuario</h1>

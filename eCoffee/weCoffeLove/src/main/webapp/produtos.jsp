@@ -1,10 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Home - WeLoveCoffee</title>
-    <link href="styles.css" rel="stylesheet">
-    <link href="produtos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+     <link rel="stylesheet" href="produtos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -29,7 +34,7 @@
         <h2>Café Popular</h2>
         <p>O Café Pilão é uma marca brasileira de café que existe desde 1978. Seu café é considerado um café forte e
             encorpado, com sabor e aroma intensos, típicos dos cafés brasileiros.</p>
-        <span class="preco">R$ 17,99</span>
+        <span class="preco">R$ 17,99 <a href="pilao.jsp">Comprar</a> </span>
     </div>
 
     <div class="produto">
@@ -46,7 +51,7 @@
         <p>O café Orfeu é um café especial produzido na região da Serra da Mantiqueira, em Minas Gerais, Brasil. A marca
             foi fundada em 2005 por uma família de produtores de café, que decidiu investir na produção de cafés de alta
             qualidade.</p>
-        <span class="preco">R$ 29,29<a href="orfeu.jsp">Comprar</a> </span>
+        <span class="preco">R$ 29,29 <a href="orfeu.jsp">Comprar</a> </span>
     </div>
 
     <div class="produto">
@@ -54,7 +59,7 @@
         <h2>Café Gourmet</h2>
         <p>O café Santo Grão é uma marca de café brasileira que foi fundada em 2003. A marca é conhecida por oferecer
             uma experiência única de café, com cafeterias que possuem uma atmosfera aconchegante e sofisticada.</p>
-        <<span class="preco">R$ 24,90</span>
+        <span class="preco">R$ 24,90 <a href="santograo.jsp">Comprar</a> </span>
     </div>
 
     <div class="produto">
@@ -63,13 +68,14 @@
         <p>O café Starbucks é uma marca americana que foi fundada em 1971 em Seattle, Washington. A empresa é conhecida
             por suas cafeterias espalhadas por todo o mundo, que oferecem uma ampla variedade de bebidas à base de café,
             chás, sucos e comidas.</p>
-        <span class="preco">R$ 33,90</span>
+        <span class="preco">R$ 33,90 <a href="starbucks.jsp">Comprar</a> </span>
     </div>
 
-    <footer>
-        <p>&copy; 2023 WeLoveCoffee. Todos os direitos reservados.</p>
+        <footer>
+            <p>&copy; 2023 WeLoveCoffee. Todos os direitos reservados.</p>
 
-    </footer>
+        </footer>
 
-</body>
-</html>
+    </body>
+    </html>
+

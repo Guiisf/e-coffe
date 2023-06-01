@@ -1,5 +1,8 @@
 package br.com.weCofeLove.servlet;
 
+import br.com.weCofeLove.dao.WeCoffeDAO;
+import br.com.weCofeLove.model.User;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,12 +18,22 @@ public class ListUserServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        List<User> usuarios = new WeCoffeDAO().findAllUsers();
 
-        request.setAttribute("usuarios", usuarios);
+        if (null == request.getSession().getAttribute("username")) {
 
-        request.getRequestDispatcher("dashboard.jsp").forward(request, response);
+
+            request.setAttribute("message", "Credenciais Invalidas, voce nao é do Grupo!");
+
+
+            request.getRequestDispatcher("login.jsp").forward(request, response);
+
+        } else {
+            List<User> usuarios = new WeCoffeDAO().findAllUsers();
+
+            request.setAttribute("usuarios", usuarios);
+
+            request.getRequestDispatcher("dashboard.jsp").forward(request, response);
+        }
 
     }
-
 }

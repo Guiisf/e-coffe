@@ -9,6 +9,28 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="dashboard.css">
     <style>
+
+    .username {
+      font-weight: bold;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .username::after {
+      content: ",";
+      margin-left: 5px;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
         table {
             border-collapse: collapse;
             width: 100%;
@@ -62,6 +84,9 @@
 </head>
 <body>
   <div>
+
+  <%@ include file="header.jsp" %>
+
     <h1>Usuarios</h1>
     <table>
         <tr>
