@@ -1,128 +1,148 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-  margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
 }
 
 #area-logo {
-  padding: 10px;
+    padding: 10px;
 }
-#area-cabecalho {
 
-	padding: 10px;
-	text-align: center;
+#area-cabecalho {
+    padding: 10px;
+    text-align: center;
+    animation: fadeIn 1s ease;
 }
+
 .username {
-  color: #ffffff;
-  float: right;
-}1
+    color: #ffffff;
+    float: right;
+    transition: color 0.3s ease;
+}
 
 #area-menu {
-  padding: 1px;
+    padding: 10px;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
-a:link, a:visited {
-  color: #000000;
+a:link,
+a:visited {
+    color: #000000;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 #area-cabecalho a:link,
 #area-cabecalho a:visited {
-  color: #fff;
-  padding: 8px 12px;
+    color: #fff;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
 }
 
 #area-cabecalho a:hover {
-  color: #000000;
-  background: #fff;
-  text-decoration: none;
+    color: #000000;
+    background: #fff;
+    text-decoration: none;
 }
 
 h1 {
-  text-align: center;
-  color: #333;
-  margin-top: 50px;
+    text-align: center;
+    color: #333;
+    margin-top: 50px;
 }
 
 form {
-  width: 400px;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 label {
-  display: block;
-  margin-bottom: 10px;
-  color: #555;
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
 }
 
 input[type="email"],
 input[type="text"],
 input[type="date"],
 input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
 button[type="submit"] {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: none;
-  background-color: #4CAF50;
-  color: #fff;
-  cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
 }
 
 .float-right {
-  float: right;
-  margin-left: 20px; /* adicionamos uma margem à esquerda para separar a imagem do texto */
+    float: right;
+    margin-left: 20px;
 }
 
 .username {
-  font-weight: bold;
-  color: red;
-  margin-left: 10px;
+    font-weight: bold;
+    color: red;
+    margin-left: 10px;
 }
 
 .success-message {
-  background-color: green;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  font-weight: bold;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    animation: fadeOut 3s ease-in-out;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .username-right {
-  float: right;
+    float: right;
 }
 
 .align-right {
-  float: right;
+    float: right;
 }
 
 footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  background-color: #000000;
-  color: #ffffff;
-  text-align: center;
-  padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
 }

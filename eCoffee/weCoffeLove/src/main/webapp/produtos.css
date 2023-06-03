@@ -6,27 +6,32 @@ main {
   align-items: center;
   text-align: center;
 }
-#area-cabecalho {
 
-	padding: 10px;
-	text-align: center;
+#area-cabecalho {
+  padding: 10px;
+  text-align: center;
 }
+
 .username {
   color: #ffffff;
   float: right;
 }
 
-
-
-
 /* Define um tamanho fixo para a div de cada produto */
 .produto {
-  width: 200px;
+  width: 300px;
   margin: 20px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.produto .preco {
-  font-weight: bold;
+/* Altera a cor de fundo ao passar o mouse sobre o produto */
+.produto:hover {
+  background-color: #eaeaea;
+  transform: scale(1.05);
 }
 
 /* Centraliza a imagem dentro da div do produto */
@@ -35,26 +40,46 @@ main {
   height: auto;
   display: block;
   margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Estiliza o título do produto */
 .produto h2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-top: 10px;
+  color: #333333;
 }
 
 /* Estiliza a descrição do produto */
 .produto p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 5px;
+  color: #666666;
 }
 
-/* Cria uma borda ao redor da imagem do produto */
-.produto img {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+/* Estiliza o preço do produto */
+.produto .preco {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff6600;
+  margin-top: 10px;
+}
+
+/* Estiliza o link de compra */
+.produto .preco a {
+  color: #ffffff;
+  background-color: #ff6600;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.produto .preco a:hover {
+  background-color: #cc5500;
 }
 
 footer {

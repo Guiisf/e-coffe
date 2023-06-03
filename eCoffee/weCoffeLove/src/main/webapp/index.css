@@ -1,227 +1,144 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body {
+    font-size: 1em;
+    font-family: "Trebuchet MS", Hevetica, sans-serif;
+    background: #e6e6e6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
+    background-color: #000000;
+    padding: 15px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    animation: fadeIn 1s ease;
 }
 
-.titulo-home {
-    font-size: 40px;
+#area-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.produto {
-    width: 200px;
-    margin: 20px;
-}
-.produto .preco {
-    font-weight: bold;
+#area-cabecalho a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
 }
 
+#area-cabecalho a:hover {
+    background-color: #fff;
+    color: #000;
+}
 
-.produto img {
-max-width: 100%;
-  height: auto;
+.logo {
+    max-width: 200px;
+}
+
+#area-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#area-postagens {
+    width: 70%;
+    animation: fadeInLeft 1s ease;
+}
+
+.postagem {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.postagem img {
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
-}
-
-.produto h2 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.produto p {
-    font-size: 0.8rem;
-    margin-top: 5px;
-}
-
-.produto img {
-
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-
-footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  background-color: #000000;
-  color: #ffffff;
-  text-align: center;
-  padding: 10px;
+.postagem h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-#area-botao {
-  float: right;
-}
-
-#area-botao button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 10px 24px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-* {
-	margin: 0px;
-	padding: 0px;
-}
-
-body {
-	font-size: 1em;
-	font-family: "Trebuchet MS", Hevetica, sans-serif;
-	background: #e6e6e6;
-}
-
-#area-cabecalho {
-	
-	padding: 10px;
-	text-align: center;
-}
-.username {
-  color: #ffffff;
-  float: right;
-}
-
-
-#area-logo {
-	padding: 10px;
-}
-
-#area-menu {
-	padding: 10px;
-}
-
-#area-principal {
-	width: 920px;
-	margin: 0 auto;
-	padding: 15px;
-}
-
-#area-postagens {
-	width: 660px;
-	float: left;
+.postagem p {
+    font-size: 0.8rem;
+    margin-top: 5px;
 }
 
 #area-lateral {
-	width: 240px;
-	float: right;
-}
-
-.postagem {
-	padding: 20px;
-	margin-bottom: 20px;
-	background: white;
+    width: 30%;
+    animation: fadeInRight 1s ease;
 }
 
 .conteudo-lateral {
-	background: white;
-	padding: 10px;
-	margin-bottom: 20px;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .postagem-lateral {
-	font-size: 0.8em;
-	padding: 5px;
-	border-bottom: 1px dotted #ccc;
+    font-size: 0.8em;
+    padding: 5px;
+    border-bottom: 1px dotted #ccc;
 }
 
 #rodape {
-	clear: both;
-	text-align: center;
-	padding: 1px;
-	background: #e6e6e6;
-}
-
-
-a {
-	text-decoration: none;
-    
-}
-
-a:link, a:visited {
-	color: #000000;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-
-#area-cabecalho a:link, #area-cabecalho a:visited a:hover{
-	color: #FFF;
-	padding: 8px 12px;
-}
-
-#area-cabecalho {
-	background-color: #000000;
-	padding: 15px;
-	text-align: center;
-}
-
-
-
-h1 {
-	color: #4e4e4e;
-	font-size: 2.5em;
-}
-
-h2 {
-	color: #000000;
-}
-
-h3 {
-	color: #565656;
-	background: #ccc;
-	padding: 5px;
-}
-
-.branco {
-	color: white;
-}
-
-.data-postagem {
-	font-size: 0.8em;
-	border-bottom: 1px solid #f4f4f4;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
-	display: block;
-}
-
-<script>
-    window.addEventListener('DOMContentLoaded', function() {
-        var username = sessionStorage.getItem('username');
-        if (username) {
-            var usernameSpan = document.createElement('span');
-            usernameSpan.textContent = username;
-            usernameSpan.className = 'username';
-            var footer = document.querySelector('footer');
-            footer.appendChild(usernameSpan);
-        }
-    });
-</script>
-
-.success-message {
-    background-color: green;
-    color: white;
-    padding: 10px;
     text-align: center;
-    font-weight: bold;
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
 }
 
-.username {
-  color: #ffffff;
-  float: right;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

@@ -3,28 +3,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tela de Login</title>
+    <title>Registro de Usuario</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cadastro.css">
+<link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <div id="area-cabecalho">
+        <%@ include file="header.jsp" %>
 
-<div id="area-cabecalho">
-<%@ include file="header.jsp" %>
-
-    <div id="area-logo">
-
-        <img width="250px" src="img/logo.png">
-
-    </div>
-
-    <div id="area-menu">
-            <a href="index.jsp">Home</a>
-            <a href="produtos.html">Produtos</a>
-            <a href="quemSomos.html">Quem Somos</a>
-            <a href="registro.html">Registrar</a>
+    <div id="area-cabecalho">
+        <div id="area-logo">
+            <img alt="Logo WeLoveCoffee" src="img/logo.png">
         </div>
 
+
+    </div>
+</header>
+<main>
 
     <h1>Registro de Usuario</h1>
 
@@ -59,7 +58,7 @@
 
         <button type="submit">Cadastrar</button
     </form>
-
+</main>
     <footer>
         <p>&copy; 2023 WeLoveCoffee. Todos os direitos reservados.</p>
     </footer>

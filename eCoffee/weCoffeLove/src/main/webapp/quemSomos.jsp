@@ -5,20 +5,25 @@
     <meta charset="UTF-8">
     <title>Quem Somos - WeLoveCoffee</title>
     <link href="quemsomos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
     <div id="area-cabecalho">
-    <%@ include file="header.jsp" %>
+        <%@ include file="header.jsp" %>
+
+    <div id="area-cabecalho">
         <div id="area-logo">
-            <img alt="Logo WeLoveCoffee" id="foto-logo" src="img/logo.png">
+            <img alt="Logo WeLoveCoffee" src="img/logo.png">
         </div>
         <div id="area-menu">
-                    <a href="index.jsp">Home</a>
-                    <a href="produtos.jsp">Produtos</a>
-                    <a href="quemSomos.jsp">Quem Somos</a>
-                    <a href="registro.jsp">Registrar</a>
-                </div>
+            <a href="index.jsp">Home</a>
+            <a href="produtos.jsp">Produtos</a>
+            <a href="quemSomos.jsp">Quem Somos</a>
+
+        </div>
     </div>
 </header>
 <main>

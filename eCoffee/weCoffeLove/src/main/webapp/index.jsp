@@ -24,7 +24,7 @@
                    <a href="index.jsp">Home</a>
                    <a href="produtos.jsp">Produtos</a>
                    <a href="quemSomos.jsp">Quem Somos</a>
-                   <a href="registro.jsp">Registrar</a>
+
                </div>
     </div>
 </header>
